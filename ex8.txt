@@ -1,0 +1,272 @@
+                                     ~/kundoluk/blutter_output $ cd ~/kundoluk/blutter_output                                                        
+FILE="asm/bilim/screens/student/home/student_home_screen.dart"
+                                                        echo "===== APPBAR + FLOATING BUTTON ====="
+sed -n '400,590p' "$FILE"                               
+echo "===== GRID VIEW ====="                            sed -n '1450,1560p' "$FILE"                                                                                     echo "===== LIST + REFRESH + SCAFFOLD ====="
+sed -n '1880,2120p' "$FILE"                             ===== APPBAR + FLOATING BUTTON =====                        //     0x7c471c: bl              #0x6cfdf8  ; AllocateIconButtonStub -> IconButton (size=0x74)
+    // 0x7c4720: mov             x3, x0                     // 0x7c4724: ldur            x0, [fp, #-0x20]           // 0x7c4728: stur            x3, [fp, #-0x48]           // 0x7c472c: StoreField: r3->field_3b = r0
+    //     0x7c472c: stur            w0, [x3, #0x3b]        // 0x7c4730: r0 = false
+    //     0x7c4730: add             x0, NULL, #0x30  ; false                                                       // 0x7c4734: StoreField: r3->field_4f = r0              //     0x7c4734: stur            w0, [x3, #0x4f]
+    // 0x7c4738: ldur            x1, [fp, #-0x38]           // 0x7c473c: StoreField: r3->field_1f = r1              //     0x7c473c: stur            w1, [x3, #0x1f]        // 0x7c4740: r1 = Instance__IconButtonVariant
+    //     0x7c4740: add             x1, PP, #0x16, lsl #12  ; [pp+0x163d8] Obj!_IconButtonVariant@a4b531
+    //     0x7c4744: ldr             x1, [x1, #0x3d8]       // 0x7c4748: StoreField: r3->field_6f = r1
+    //     0x7c4748: stur            w1, [x3, #0x6f]        // 0x7c474c: r1 = Null                                  //     0x7c474c: mov             x1, NULL               // 0x7c4750: r2 = 4                                     //     0x7c4750: mov             x2, #4                 // 0x7c4754: r0 = AllocateArray()
+    //     0x7c4754: bl              #0xb53c64  ; AllocateArrayStub
+    // 0x7c4758: mov             x2, x0                     // 0x7c475c: ldur            x0, [fp, #-0x40]
+    // 0x7c4760: stur            x2, [fp, #-0x20]           // 0x7c4764: StoreField: r2->field_f = r0
+    //     0x7c4764: stur            w0, [x2, #0xf]         // 0x7c4768: ldur            x0, [fp, #-0x48]
+    // 0x7c476c: StoreField: r2->field_13 = r0              //     0x7c476c: stur            w0, [x2, #0x13]        // 0x7c4770: r1 = <Widget>                              //     0x7c4770: ldr             x1, [PP, #0x6798]  ; [pp+0x6798] TypeArguments: <Widget>                       // 0x7c4774: r0 = AllocateGrowableArray()               //     0x7c4774: bl              #0xb52940  ; AllocateGrowableArrayStub                                         // 0x7c4778: mov             x1, x0                     // 0x7c477c: ldur            x0, [fp, #-0x20]           // 0x7c4780: stur            x1, [fp, #-0x38]           // 0x7c4784: StoreField: r1->field_f = r0               //     0x7c4784: stur            w0, [x1, #0xf]         // 0x7c4788: r2 = 4                                     //     0x7c4788: mov             x2, #4                 // 0x7c478c: StoreField: r1->field_b = r2               //     0x7c478c: stur            w2, [x1, #0xb]         // 0x7c4790: r0 = AppBar()                              //     0x7c4790: bl              #0x65ac78  ; AllocateAppBarStub -> AppBar (size=0x98)
+    // 0x7c4794: stur            x0, [fp, #-0x20]           // 0x7c4798: ldur            x16, [fp, #-0x18]
+    // 0x7c479c: ldur            lr, [fp, #-0x30]           // 0x7c47a0: stp             lr, x16, [SP, #8]          // 0x7c47a4: ldur            x16, [fp, #-0x38]          // 0x7c47a8: str             x16, [SP]
+    // 0x7c47ac: mov             x1, x0                     // 0x7c47b0: ldur            x2, [fp, #-0x28]
+    // 0x7c47b4: r4 = const [0, 0x5, 0x3, 0x2, actions, 0x4, flexibleSpace, 0x2, leading, 0x3, null]
+    //     0x7c47b4: add             x4, PP, #0x17, lsl #12  ; [pp+0x17db0] List(11) [0, 0x5, 0x3, 0x2, "actions", 0x4, "flexibleSpace", 0x2, "leading", 0x3, Null]         //     0x7c47b8: ldr             x4, [x4, #0xdb0]
+    // 0x7c47bc: r0 = AppBar()                              //     0x7c47bc: bl              #0x65a544  ; [package:flutter/src/material/app_bar.dart] AppBar::AppBar        // 0x7c47c0: ldur            x0, [fp, #-8]
+    // 0x7c47c4: LoadField: r1 = r0->field_b                //     0x7c47c4: ldur            w1, [x0, #0xb]
+    // 0x7c47c8: DecompressPointer r1                       //     0x7c47c8: add             x1, x1, HEAP, lsl #32                                                          // 0x7c47cc: stur            x1, [fp, #-0x30]
+    // 0x7c47d0: LoadField: r0 = r1->field_b                //     0x7c47d0: ldur            w0, [x1, #0xb]
+    // 0x7c47d4: DecompressPointer r0                       //     0x7c47d4: add             x0, x0, HEAP, lsl #32                                                          // 0x7c47d8: LoadField: r2 = r0->field_b
+    //     0x7c47d8: ldur            w2, [x0, #0xb]         // 0x7c47dc: DecompressPointer r2                       //     0x7c47dc: add             x2, x2, HEAP, lsl #32
+    // 0x7c47e0: stur            x2, [fp, #-0x28]           // 0x7c47e4: LoadField: r3 = r2->field_f                //     0x7c47e4: ldur            w3, [x2, #0xf]         // 0x7c47e8: DecompressPointer r3                       //     0x7c47e8: add             x3, x3, HEAP, lsl #32
+    // 0x7c47ec: stur            x3, [fp, #-0x18]           // 0x7c47f0: LoadField: r0 = r3->field_b
+    //     0x7c47f0: ldur            w0, [x3, #0xb]         // 0x7c47f4: DecompressPointer r0                       //     0x7c47f4: add             x0, x0, HEAP, lsl #32                                                          // 0x7c47f8: cmp             w0, NULL                   // 0x7c47fc: b.eq            #0x7c5960                  // 0x7c4800: LoadField: r4 = r0->field_b                //     0x7c4800: ldur            w4, [x0, #0xb]
+    // 0x7c4804: DecompressPointer r4                       //     0x7c4804: add             x4, x4, HEAP, lsl #32                                                          // 0x7c4808: stur            x4, [fp, #-8]
+    // 0x7c480c: r0 = NavigationDraw()                      //     0x7c480c: bl              #0x7bee18  ; AllocateNavigationDrawStub -> NavigationDraw (size=0x14)          // 0x7c4810: mov             x2, x0
+    // 0x7c4814: ldur            x0, [fp, #-8]              // 0x7c4818: stur            x2, [fp, #-0x38]
+    // 0x7c481c: StoreField: r2->field_b = r0               //     0x7c481c: stur            w0, [x2, #0xb]         // 0x7c4820: r1 = Function '<anonymous closure>':.      //     0x7c4820: add             x1, PP, #0x17, lsl #12  ; [pp+0x17db8] Function: [dart:ui] Shader::Shader._ (0xb2f2c8)                                                 //     0x7c4824: ldr             x1, [x1, #0xdb8]       // 0x7c4828: r3 = Null
+    //     0x7c4828: mov             x3, NULL
+    // 0x7c482c: r2 = 64                                    //     0x7c482c: mov             x2, #0x40
+    // 0x7c4830: r0 = AllocateClosure1()                    //     0x7c4830: bl              #0xb52d60  ; AllocateClosure1Stub
+    // 0x7c4834: mov             x1, x0
+    // 0x7c4838: ldur            x0, [fp, #-0x38]           // 0x7c483c: StoreField: r0->field_f = r1
+    //     0x7c483c: stur            w1, [x0, #0xf]         // 0x7c4840: ldur            x3, [fp, #-0x18]
+    // 0x7c4844: LoadField: r1 = r3->field_1f               //     0x7c4844: ldur            w1, [x3, #0x1f]
+    // 0x7c4848: DecompressPointer r1
+    //     0x7c4848: add             x1, x1, HEAP, lsl #32
+    // 0x7c484c: tbnz            w1, #4, #0x7c48cc          // 0x7c4850: r0 = FloatingActionButton()
+    //     0x7c4850: bl              #0x6cde90  ; AllocateFloatingActionButtonStub -> FloatingActionButton (size=0x74)
+    // 0x7c4854: mov             x2, x0
+    // 0x7c4858: r0 = Instance_Icon                         //     0x7c4858: add             x0, PP, #0x17, lsl #12  ; [pp+0x17dc0] Obj!Icon@a43951                         //     0x7c485c: ldr             x0, [x0, #0xdc0]
+    // 0x7c4860: stur            x2, [fp, #-8]
+    // 0x7c4864: StoreField: r2->field_b = r0
+    //     0x7c4864: stur            w0, [x2, #0xb]         // 0x7c4868: r0 = Instance_Color
+    //     0x7c4868: add             x0, PP, #0x16, lsl #12  ; [pp+0x16540] Obj!Color@a35831
+    //     0x7c486c: ldr             x0, [x0, #0x540]       // 0x7c4870: ArrayStore: r2[0] = r0  ; List_4           //     0x7c4870: stur            w0, [x2, #0x17]
+    // 0x7c4874: r1 = Instance__DefaultHeroTag
+    //     0x7c4874: add             x1, PP, #0x17, lsl #12  ; [pp+0x17dc8] Obj!_DefaultHeroTag@a32051
+    //     0x7c4878: ldr             x1, [x1, #0xdc8]       // 0x7c487c: StoreField: r2->field_27 = r1              //     0x7c487c: stur            w1, [x2, #0x27]
+    // 0x7c4880: ldur            x3, [fp, #-0x18]
+    // 0x7c4884: r1 = Function '_scrollToTop@851367018':.
+    //     0x7c4884: add             x1, PP, #0x17, lsl #12  ; [pp+0x17dd0] AnonymousClosure: (0x7c6250), in [package:bilim/screens/student/home/student_home_screen.dart] _StudentHomeScreenState::_scrollToTop (0x7c6288)         //     0x7c4888: ldr             x1, [x1, #0xdd0]
+    // 0x7c488c: r2 = 64
+    //     0x7c488c: mov             x2, #0x40              // 0x7c4890: r0 = AllocateClosure1()
+    //     0x7c4890: bl              #0xb52d60  ; AllocateClosure1Stub
+    // 0x7c4894: mov             x1, x0                     // 0x7c4898: ldur            x0, [fp, #-8]              // 0x7c489c: StoreField: r0->field_2b = r1              //     0x7c489c: stur            w1, [x0, #0x2b]
+    // 0x7c48a0: r1 = Instance_Clip
+    //     0x7c48a0: add             x1, PP, #0x15, lsl #12  ; [pp+0x15e70] Obj!Clip@a4d6f1
+    //     0x7c48a4: ldr             x1, [x1, #0xe70]
+    // 0x7c48a8: StoreField: r0->field_4b = r1
+    //     0x7c48a8: stur            w1, [x0, #0x4b]
+    // 0x7c48ac: r2 = false                                 //     0x7c48ac: add             x2, NULL, #0x30  ; false
+    // 0x7c48b0: StoreField: r0->field_57 = r2              //     0x7c48b0: stur            w2, [x0, #0x57]
+    // 0x7c48b4: StoreField: r0->field_4f = r2              //     0x7c48b4: stur            w2, [x0, #0x4f]
+    // 0x7c48b8: r3 = Instance__FloatingActionButtonType    //     0x7c48b8: add             x3, PP, #0x17, lsl #12  ; [pp+0x17dd8] Obj!_FloatingActionButtonType@a4b551
+    //     0x7c48bc: ldr             x3, [x3, #0xdd8]
+    // 0x7c48c0: StoreField: r0->field_6f = r3              //     0x7c48c0: stur            w3, [x0, #0x6f]        // 0x7c48c4: mov             x4, x0
+    // 0x7c48c8: b               #0x7c48dc                  // 0x7c48cc: r2 = false
+    //     0x7c48cc: add             x2, NULL, #0x30  ; false                                                       // 0x7c48d0: r1 = Instance_Clip                         //     0x7c48d0: add             x1, PP, #0x15, lsl #12  ; [pp+0x15e70] Obj!Clip@a4d6f1
+    //     0x7c48d4: ldr             x1, [x1, #0xe70]
+    // 0x7c48d8: r4 = Null
+    //     0x7c48d8: mov             x4, NULL
+    // 0x7c48dc: ldur            x3, [fp, #-0x30]
+    // 0x7c48e0: ldur            x0, [fp, #-0x18]
+    // 0x7c48e4: stur            x4, [fp, #-0x40]
+    // 0x7c48e8: LoadField: r5 = r0->field_1b               //     0x7c48e8: ldur            w5, [x0, #0x1b]
+    // 0x7c48ec: DecompressPointer r5                       //     0x7c48ec: add             x5, x5, HEAP, lsl #32
+    // 0x7c48f0: stur            x5, [fp, #-8]
+    // 0x7c48f4: r16 = <Widget>
+    //     0x7c48f4: ldr             x16, [PP, #0x6798]  ; [pp+0x6798] TypeArguments: <Widget>                      // 0x7c48f8: stp             xzr, x16, [SP]
+    // 0x7c48fc: r4 = const [0x1, 0x1, 0x1, 0x1, null]
+    //     0x7c48fc: ldr             x4, [PP, #0x8c0]  ; [pp+0x8c0] List(5) [0x1, 0x1, 0x1, 0x1, Null]              // 0x7c4900: r0 = _GrowableList()
+    //     0x7c4900: bl              #0x44076c  ; [dart:core] _GrowableList::_GrowableList
+    // 0x7c4904: mov             x2, x0                     // 0x7c4908: ldur            x0, [fp, #-0x30]           // 0x7c490c: stur            x2, [fp, #-0x18]
+===== GRID VIEW =====
+    // 0x7c5230: r1 = Function '<anonymous closure>':.      //     0x7c5230: add             x1, PP, #0x17, lsl #12  ; [pp+0x17e98] AnonymousClosure: (0x7c43ac), in [package:bilim/screens/student/home/student_home_screen.dart] _StudentHomeScreenState::build (0x7da81c)                //     0x7c5234: ldr             x1, [x1, #0xe98]       // 0x7c5238: r2 = 64                                    //     0x7c5238: mov             x2, #0x40              // 0x7c523c: r0 = AllocateClosure1()
+    //     0x7c523c: bl              #0xb52d60  ; AllocateClosure1Stub                                              // 0x7c5240: mov             x1, x0                     // 0x7c5244: ldur            x0, [fp, #-0x88]           // 0x7c5248: StoreField: r0->field_1b = r1              //     0x7c5248: stur            w1, [x0, #0x1b]        // 0x7c524c: r1 = Null                                  //     0x7c524c: mov             x1, NULL               // 0x7c5250: r2 = 12
+    //     0x7c5250: mov             x2, #0xc               // 0x7c5254: r0 = AllocateArray()
+    //     0x7c5254: bl              #0xb53c64  ; AllocateArrayStub                                                 // 0x7c5258: mov             x2, x0
+    // 0x7c525c: ldur            x0, [fp, #-0x50]
+    // 0x7c5260: stur            x2, [fp, #-0x48]
+    // 0x7c5264: StoreField: r2->field_f = r0
+    //     0x7c5264: stur            w0, [x2, #0xf]         // 0x7c5268: ldur            x0, [fp, #-0x68]
+    // 0x7c526c: StoreField: r2->field_13 = r0
+    //     0x7c526c: stur            w0, [x2, #0x13]
+    // 0x7c5270: ldur            x0, [fp, #-0x70]           // 0x7c5274: ArrayStore: r2[0] = r0  ; List_4
+    //     0x7c5274: stur            w0, [x2, #0x17]
+    // 0x7c5278: ldur            x0, [fp, #-0x78]
+    // 0x7c527c: StoreField: r2->field_1b = r0              //     0x7c527c: stur            w0, [x2, #0x1b]
+    // 0x7c5280: ldur            x0, [fp, #-0x80]
+    // 0x7c5284: StoreField: r2->field_1f = r0              //     0x7c5284: stur            w0, [x2, #0x1f]        // 0x7c5288: ldur            x0, [fp, #-0x88]           // 0x7c528c: StoreField: r2->field_23 = r0
+    //     0x7c528c: stur            w0, [x2, #0x23]
+    // 0x7c5290: r1 = <Widget>                              //     0x7c5290: ldr             x1, [PP, #0x6798]  ; [pp+0x6798] TypeArguments: <Widget>
+    // 0x7c5294: r0 = AllocateGrowableArray()               //     0x7c5294: bl              #0xb52940  ; AllocateGrowableArrayStub                                         // 0x7c5298: mov             x1, x0
+    // 0x7c529c: ldur            x0, [fp, #-0x48]
+    // 0x7c52a0: stur            x1, [fp, #-0x50]
+    // 0x7c52a4: StoreField: r1->field_f = r0               //     0x7c52a4: stur            w0, [x1, #0xf]
+    // 0x7c52a8: r0 = 12
+    //     0x7c52a8: mov             x0, #0xc
+    // 0x7c52ac: StoreField: r1->field_b = r0               //     0x7c52ac: stur            w0, [x1, #0xb]
+    // 0x7c52b0: r0 = NeverScrollableScrollPhysics()
+    //     0x7c52b0: bl              #0x795aa4  ; AllocateNeverScrollableScrollPhysicsStub -> NeverScrollableScrollPhysics (size=0xc)                                       // 0x7c52b4: stur            x0, [fp, #-0x48]
+    // 0x7c52b8: r0 = GridView()
+    //     0x7c52b8: bl              #0x7c1fe0  ; AllocateGridViewStub -> GridView (size=0x64)
+    // 0x7c52bc: mov             x1, x0                     // 0x7c52c0: ldur            x2, [fp, #-0x50]           // 0x7c52c4: ldur            x3, [fp, #-0x48]
+    // 0x7c52c8: stur            x0, [fp, #-0x48]
+    // 0x7c52cc: r0 = GridView.count()                      //     0x7c52cc: bl              #0x7c1e84  ; [package:flutter/src/widgets/scroll_view.dart] GridView::GridView.count                                                   // 0x7c52d0: ldur            x0, [fp, #-0x18]           // 0x7c52d4: LoadField: r1 = r0->field_b                //     0x7c52d4: ldur            w1, [x0, #0xb]         // 0x7c52d8: LoadField: r2 = r0->field_f                //     0x7c52d8: ldur            w2, [x0, #0xf]
+    // 0x7c52dc: DecompressPointer r2                       //     0x7c52dc: add             x2, x2, HEAP, lsl #32                                                          // 0x7c52e0: LoadField: r3 = r2->field_b                //     0x7c52e0: ldur            w3, [x2, #0xb]         // 0x7c52e4: r2 = LoadInt32Instr(r1)
+    //     0x7c52e4: sbfx            x2, x1, #1, #0x1f
+    // 0x7c52e8: stur            x2, [fp, #-0x58]           // 0x7c52ec: r1 = LoadInt32Instr(r3)
+    //     0x7c52ec: sbfx            x1, x3, #1, #0x1f      // 0x7c52f0: cmp             x2, x1
+    // 0x7c52f4: b.ne            #0x7c5300                  // 0x7c52f8: mov             x1, x0                     // 0x7c52fc: r0 = _growToNextCapacity()                 //     0x7c52fc: bl              #0x440564  ; [dart:core] _GrowableList::_growToNextCapacity                    // 0x7c5300: ldur            x2, [fp, #-0x18]           // 0x7c5304: ldur            x3, [fp, #-0x58]           // 0x7c5308: add             x4, x3, #1                 // 0x7c530c: lsl             x0, x4, #1                 // 0x7c5310: StoreField: r2->field_b = r0               //     0x7c5310: stur            w0, [x2, #0xb]         // 0x7c5314: LoadField: r5 = r2->field_f                //     0x7c5314: ldur            w5, [x2, #0xf]         // 0x7c5318: DecompressPointer r5                       //     0x7c5318: add             x5, x5, HEAP, lsl #32                                                          // 0x7c531c: mov             x1, x5                     // 0x7c5320: ldur            x0, [fp, #-0x48]
+    // 0x7c5324: ArrayStore: r1[r3] = r0  ; List_4
+    //     0x7c5324: add             x25, x1, x3, lsl #2    //     0x7c5328: add             x25, x25, #0xf         //     0x7c532c: str             w0, [x25]              //     0x7c5330: tbz             w0, #0, #0x7c534c
+    //     0x7c5334: ldurb           w16, [x1, #-1]         //     0x7c5338: ldurb           w17, [x0, #-1]
+    //     0x7c533c: and             x16, x17, x16, lsr #2
+    //     0x7c5340: tst             x16, HEAP, lsr #32     //     0x7c5344: b.eq            #0x7c534c
+    //     0x7c5348: bl              #0xb53d74  ; ArrayWriteBarrierStub
+    // 0x7c534c: mov             x3, x4
+    // 0x7c5350: mov             x1, x5                     // 0x7c5354: ldur            x0, [fp, #-0x30]
+    // 0x7c5358: stur            x3, [fp, #-0x58]
+    // 0x7c535c: stur            x1, [fp, #-0x48]
+    // 0x7c5360: LoadField: r4 = r0->field_f                //     0x7c5360: ldur            w4, [x0, #0xf]         // 0x7c5364: DecompressPointer r4
+===== LIST + REFRESH + SCAFFOLD =====
+    // 0x7c56d4: r0 = LoadClassIdInstr(r3)
+    //     0x7c56d4: ldur            x0, [x3, #-1]
+    //     0x7c56d8: ubfx            x0, x0, #0xc, #0x14    // 0x7c56dc: str             x3, [SP]
+    // 0x7c56e0: r0 = GDT[cid_x0 + 0x9af9]()
+    //     0x7c56e0: mov             x17, #0x9af9
+    //     0x7c56e4: add             lr, x0, x17
+    //     0x7c56e8: ldr             lr, [x21, lr, lsl #3]
+    //     0x7c56ec: blr             lr                     // 0x7c56f0: r1 = LoadInt32Instr(r0)
+    //     0x7c56f0: sbfx            x1, x0, #1, #0x1f      //     0x7c56f4: tbz             w0, #0, #0x7c56fc      //     0x7c56f8: ldur            x1, [x0, #7]
+    // 0x7c56fc: cmp             x1, #0
+    // 0x7c5700: b.le            #0x7c5814
+    // 0x7c5704: ldur            x0, [fp, #-0x30]           // 0x7c5708: ldur            x1, [fp, #-0x18]
+    // 0x7c570c: LoadField: r2 = r0->field_f
+    //     0x7c570c: ldur            w2, [x0, #0xf]
+    // 0x7c5710: DecompressPointer r2                       //     0x7c5710: add             x2, x2, HEAP, lsl #32
+    // 0x7c5714: LoadField: r0 = r2->field_7
+    //     0x7c5714: ldur            w0, [x2, #7]           // 0x7c5718: DecompressPointer r0                       //     0x7c5718: add             x0, x0, HEAP, lsl #32
+    // 0x7c571c: r2 = LoadClassIdInstr(r0)
+    //     0x7c571c: ldur            x2, [x0, #-1]          //     0x7c5720: ubfx            x2, x2, #0xc, #0x14
+    // 0x7c5724: str             x0, [SP]
+    // 0x7c5728: mov             x0, x2
+    // 0x7c572c: r0 = GDT[cid_x0 + 0x9af9]()
+    //     0x7c572c: mov             x17, #0x9af9           //     0x7c5730: add             lr, x0, x17
+    //     0x7c5734: ldr             lr, [x21, lr, lsl #3]                                                          //     0x7c5738: blr             lr                     // 0x7c573c: stur            x0, [fp, #-0x28]           // 0x7c5740: r0 = NeverScrollableScrollPhysics()
+    //     0x7c5740: bl              #0x795aa4  ; AllocateNeverScrollableScrollPhysicsStub -> NeverScrollableScrollPhysics (size=0xc)
+    // 0x7c5744: ldur            x3, [fp, #-0x10]
+    // 0x7c5748: r1 = Function '<anonymous closure>':.      //     0x7c5748: add             x1, PP, #0x17, lsl #12  ; [pp+0x17ea0] AnonymousClosure: (0x7c5a34), in [package:bilim/screens/student/home/student_home_screen.dart] _StudentHomeScreenState::build (0x7da81c)
+    //     0x7c574c: ldr             x1, [x1, #0xea0]       // 0x7c5750: stur            x0, [fp, #-0x30]
+    // 0x7c5754: r2 = 64                                    //     0x7c5754: mov             x2, #0x40
+    // 0x7c5758: r0 = AllocateClosure1()
+    //     0x7c5758: bl              #0xb52d60  ; AllocateClosure1Stub
+    // 0x7c575c: stur            x0, [fp, #-0x48]           // 0x7c5760: r0 = ListView()
+    //     0x7c5760: bl              #0x6d7594  ; AllocateListViewStub -> ListView (size=0x6c)                      // 0x7c5764: stur            x0, [fp, #-0x50]
+    // 0x7c5768: r16 = true                                 //     0x7c5768: add             x16, NULL, #0x20  ; true
+    // 0x7c576c: r30 = Instance_EdgeInsets                  //     0x7c576c: add             lr, PP, #0x17, lsl #12  ; [pp+0x17ea8] Obj!EdgeInsets@a30db1                   //     0x7c5770: ldr             lr, [lr, #0xea8]
+    // 0x7c5774: stp             lr, x16, [SP, #8]          // 0x7c5778: ldur            x16, [fp, #-0x30]
+    // 0x7c577c: str             x16, [SP]
+    // 0x7c5780: mov             x1, x0
+    // 0x7c5784: ldur            x2, [fp, #-0x48]
+    // 0x7c5788: ldur            x3, [fp, #-0x28]           // 0x7c578c: r4 = const [0, 0x6, 0x3, 0x3, padding, 0x4, physics, 0x5, shrinkWrap, 0x3, null]
+    //     0x7c578c: add             x4, PP, #0x16, lsl #12  ; [pp+0x164c8] List(11) [0, 0x6, 0x3, 0x3, "padding", 0x4, "physics", 0x5, "shrinkWrap", 0x3, Null]
+    //     0x7c5790: ldr             x4, [x4, #0x4c8]
+    // 0x7c5794: r0 = ListView.builder()                    //     0x7c5794: bl              #0x6d71b0  ; [package:flutter/src/widgets/scroll_view.dart] ListView::ListView.builder
+    // 0x7c5798: ldur            x0, [fp, #-0x18]
+    // 0x7c579c: LoadField: r1 = r0->field_b
+    //     0x7c579c: ldur            w1, [x0, #0xb]         // 0x7c57a0: LoadField: r2 = r0->field_f
+    //     0x7c57a0: ldur            w2, [x0, #0xf]         // 0x7c57a4: DecompressPointer r2                       //     0x7c57a4: add             x2, x2, HEAP, lsl #32
+    // 0x7c57a8: LoadField: r3 = r2->field_b
+    //     0x7c57a8: ldur            w3, [x2, #0xb]
+    // 0x7c57ac: r2 = LoadInt32Instr(r1)                    //     0x7c57ac: sbfx            x2, x1, #1, #0x1f
+    // 0x7c57b0: stur            x2, [fp, #-0x58]           // 0x7c57b4: r1 = LoadInt32Instr(r3)                    //     0x7c57b4: sbfx            x1, x3, #1, #0x1f      // 0x7c57b8: cmp             x2, x1
+    // 0x7c57bc: b.ne            #0x7c57c8
+    // 0x7c57c0: mov             x1, x0
+    // 0x7c57c4: r0 = _growToNextCapacity()                 //     0x7c57c4: bl              #0x440564  ; [dart:core] _GrowableList::_growToNextCapacity
+    // 0x7c57c8: ldur            x2, [fp, #-0x18]
+    // 0x7c57cc: ldur            x3, [fp, #-0x58]           // 0x7c57d0: add             x0, x3, #1                 // 0x7c57d4: lsl             x1, x0, #1
+    // 0x7c57d8: StoreField: r2->field_b = r1               //     0x7c57d8: stur            w1, [x2, #0xb]
+    // 0x7c57dc: LoadField: r1 = r2->field_f
+    //     0x7c57dc: ldur            w1, [x2, #0xf]         // 0x7c57e0: DecompressPointer r1
+    //     0x7c57e0: add             x1, x1, HEAP, lsl #32
+    // 0x7c57e4: ldur            x0, [fp, #-0x50]
+    // 0x7c57e8: ArrayStore: r1[r3] = r0  ; List_4          //     0x7c57e8: add             x25, x1, x3, lsl #2    //     0x7c57ec: add             x25, x25, #0xf         //     0x7c57f0: str             w0, [x25]              //     0x7c57f4: tbz             w0, #0, #0x7c5810      //     0x7c57f8: ldurb           w16, [x1, #-1]         //     0x7c57fc: ldurb           w17, [x0, #-1]         //     0x7c5800: and             x16, x17, x16, lsr #2                                                          //     0x7c5804: tst             x16, HEAP, lsr #32     //     0x7c5808: b.eq            #0x7c5810              //     0x7c580c: bl              #0xb53d74  ; ArrayWriteBarrierStub
+    // 0x7c5810: b               #0x7c5818                  // 0x7c5814: ldur            x2, [fp, #-0x18]           // 0x7c5818: ldur            x3, [fp, #-0x20]
+    // 0x7c581c: ldur            x1, [fp, #-0x38]           // 0x7c5820: ldur            x0, [fp, #-0x40]           // 0x7c5824: r0 = ListView()
+    //     0x7c5824: bl              #0x6d7594  ; AllocateListViewStub -> ListView (size=0x6c)
+    // 0x7c5828: stur            x0, [fp, #-0x28]
+    // 0x7c582c: ldur            x16, [fp, #-8]             // 0x7c5830: r30 = Instance_AlwaysScrollableScrollPhysics                                                       //     0x7c5830: add             lr, PP, #0x15, lsl #12  ; [pp+0x15f48] Obj!AlwaysScrollableScrollPhysics@a2ea51                                                        //     0x7c5834: ldr             lr, [lr, #0xf48]       // 0x7c5838: stp             lr, x16, [SP]
+    // 0x7c583c: mov             x1, x0
+    // 0x7c5840: ldur            x2, [fp, #-0x18]
+    // 0x7c5844: r4 = const [0, 0x4, 0x2, 0x2, controller, 0x2, physics, 0x3, null]                                 //     0x7c5844: add             x4, PP, #0x17, lsl #12  ; [pp+0x17eb0] List(9) [0, 0x4, 0x2, 0x2, "controller", 0x2, "physics", 0x3, Null]                             //     0x7c5848: ldr             x4, [x4, #0xeb0]       // 0x7c584c: r0 = ListView()
+    //     0x7c584c: bl              #0x76f71c  ; [package:flutter/src/widgets/scroll_view.dart] ListView::ListView                                                         // 0x7c5850: r0 = RefreshIndicator()                    //     0x7c5850: bl              #0x7b9f38  ; AllocateRefreshIndicatorStub -> RefreshIndicator (size=0x54)
+    // 0x7c5854: d0 = 40.000000
+    //     0x7c5854: ldr             d0, [PP, #0x5c30]  ; [pp+0x5c30] IMM: double(40) from 0x4044000000000000
+    // 0x7c5858: stur            x0, [fp, #-8]              // 0x7c585c: StoreField: r0->field_f = d0
+    //     0x7c585c: stur            d0, [x0, #0xf]
+    // 0x7c5860: ArrayStore: r0[0] = rZR  ; List_8
+    //     0x7c5860: stur            xzr, [x0, #0x17]
+    // 0x7c5864: ldur            x3, [fp, #-0x10]
+    // 0x7c5868: r1 = Function '<anonymous closure>':.      //     0x7c5868: add             x1, PP, #0x17, lsl #12  ; [pp+0x17eb8] AnonymousClosure: (0x7c5968), in [package:bilim/screens/student/home/student_home_screen.dart] _StudentHomeScreenState::build (0x7da81c)                //     0x7c586c: ldr             x1, [x1, #0xeb8]
+    // 0x7c5870: r2 = 64                                    //     0x7c5870: mov             x2, #0x40
+    // 0x7c5874: r0 = AllocateClosure1()                    //     0x7c5874: bl              #0xb52d60  ; AllocateClosure1Stub                                              // 0x7c5878: mov             x1, x0                     // 0x7c587c: ldur            x0, [fp, #-8]
+    // 0x7c5880: StoreField: r0->field_1f = r1              //     0x7c5880: stur            w1, [x0, #0x1f]
+    // 0x7c5884: r1 = Instance_Color                        //     0x7c5884: add             x1, PP, #0x16, lsl #12  ; [pp+0x16540] Obj!Color@a35831                        //     0x7c5888: ldr             x1, [x1, #0x540]
+    // 0x7c588c: StoreField: r0->field_27 = r1              //     0x7c588c: stur            w1, [x0, #0x27]
+    // 0x7c5890: r1 = Closure: (ScrollNotification) => bool from Function 'defaultScrollNotificationPredicate': static.                                                     //     0x7c5890: add             x1, PP, #0x16, lsl #12  ; [pp+0x161e0] Closure: (ScrollNotification) => bool from Function 'defaultScrollNotificationPredicate': static. (0x764def9c30)                                        //     0x7c5894: ldr             x1, [x1, #0x1e0]
+    // 0x7c5898: StoreField: r0->field_2f = r1              //     0x7c5898: stur            w1, [x0, #0x2f]
+    // 0x7c589c: d0 = 2.500000                              //     0x7c589c: fmov            d0, #2.50000000
+    // 0x7c58a0: StoreField: r0->field_3b = d0              //     0x7c58a0: stur            d0, [x0, #0x3b]
+    // 0x7c58a4: r1 = Instance_RefreshIndicatorTriggerMode
+    //     0x7c58a4: add             x1, PP, #0x16, lsl #12  ; [pp+0x164e0] Obj!RefreshIndicatorTriggerMode@a4aeb1                                                          //     0x7c58a8: ldr             x1, [x1, #0x4e0]       // 0x7c58ac: StoreField: r0->field_47 = r1              //     0x7c58ac: stur            w1, [x0, #0x47]
+    // 0x7c58b0: d0 = 2.000000                              //     0x7c58b0: fmov            d0, #2.00000000
+    // 0x7c58b4: StoreField: r0->field_4b = d0              //     0x7c58b4: stur            d0, [x0, #0x4b]
+    // 0x7c58b8: ldur            x1, [fp, #-0x28]           // 0x7c58bc: StoreField: r0->field_b = r1
+    //     0x7c58bc: stur            w1, [x0, #0xb]         // 0x7c58c0: r1 = Instance__IndicatorType               //     0x7c58c0: add             x1, PP, #0x16, lsl #12  ; [pp+0x164e8] Obj!_IndicatorType@a4ae91               //     0x7c58c4: ldr             x1, [x1, #0x4e8]       // 0x7c58c8: StoreField: r0->field_43 = r1
+    //     0x7c58c8: stur            w1, [x0, #0x43]        // 0x7c58cc: r0 = SafeArea()                            //     0x7c58cc: bl              #0x6d287c  ; AllocateSafeAreaStub -> SafeArea (size=0x28)
+    // 0x7c58d0: mov             x1, x0                     // 0x7c58d4: r0 = true                                  //     0x7c58d4: add             x0, NULL, #0x20  ; true
+    // 0x7c58d8: stur            x1, [fp, #-0x10]           // 0x7c58dc: StoreField: r1->field_b = r0
+    //     0x7c58dc: stur            w0, [x1, #0xb]         // 0x7c58e0: r2 = false                                 //     0x7c58e0: add             x2, NULL, #0x30  ; false
+    // 0x7c58e4: StoreField: r1->field_f = r2               //     0x7c58e4: stur            w2, [x1, #0xf]         // 0x7c58e8: StoreField: r1->field_13 = r0              //     0x7c58e8: stur            w0, [x1, #0x13]
+    // 0x7c58ec: ArrayStore: r1[0] = r0  ; List_4           //     0x7c58ec: stur            w0, [x1, #0x17]        // 0x7c58f0: r3 = Instance_EdgeInsets                   //     0x7c58f0: ldr             x3, [PP, #0x51c8]  ; [pp+0x51c8] Obj!EdgeInsets@a2feb1                         // 0x7c58f4: StoreField: r1->field_1b = r3
+    //     0x7c58f4: stur            w3, [x1, #0x1b]        // 0x7c58f8: StoreField: r1->field_1f = r2
+    //     0x7c58f8: stur            w2, [x1, #0x1f]
+    // 0x7c58fc: ldur            x3, [fp, #-8]
+    // 0x7c5900: StoreField: r1->field_23 = r3              //     0x7c5900: stur            w3, [x1, #0x23]
+    // 0x7c5904: r0 = Scaffold()
+    //     0x7c5904: bl              #0x489db0  ; AllocateScaffoldStub -> Scaffold (size=0x64)
+    // 0x7c5908: ldur            x1, [fp, #-0x20]           // 0x7c590c: ArrayStore: r0[0] = r1  ; List_4
+    //     0x7c590c: stur            w1, [x0, #0x17]        // 0x7c5910: ldur            x1, [fp, #-0x10]           // 0x7c5914: StoreField: r0->field_1b = r1              //     0x7c5914: stur            w1, [x0, #0x1b]
+    // 0x7c5918: ldur            x1, [fp, #-0x40]           // 0x7c591c: StoreField: r0->field_1f = r1
+    //     0x7c591c: stur            w1, [x0, #0x1f]        // 0x7c5920: ldur            x1, [fp, #-0x38]
+    // 0x7c5924: StoreField: r0->field_2f = r1
+    //     0x7c5924: stur            w1, [x0, #0x2f]        // 0x7c5928: r1 = true
+    //     0x7c5928: add             x1, NULL, #0x20  ; true                                                        // 0x7c592c: StoreField: r0->field_4f = r1              //     0x7c592c: stur            w1, [x0, #0x4f]        // 0x7c5930: r2 = Instance_DragStartBehavior            //     0x7c5930: ldr             x2, [PP, #0x6550]  ; [pp+0x6550] Obj!DragStartBehavior@a4ba11                  // 0x7c5934: StoreField: r0->field_53 = r2              //     0x7c5934: stur            w2, [x0, #0x53]        // 0x7c5938: r2 = false                                 //     0x7c5938: add             x2, NULL, #0x30  ; false                                                       // 0x7c593c: StoreField: r0->field_b = r2               //     0x7c593c: stur            w2, [x0, #0xb]         // 0x7c5940: StoreField: r0->field_f = r1               //     0x7c5940: stur            w1, [x0, #0xf]         // 0x7c5944: StoreField: r0->field_13 = r2              //     0x7c5944: stur            w2, [x0, #0x13]        // 0x7c5948: StoreField: r0->field_5b = r1              //     0x7c5948: stur            w1, [x0, #0x5b]        // 0x7c594c: LeaveFrame                                 //     0x7c594c: mov             SP, fp                 //     0x7c5950: ldp             fp, lr, [SP], #0x10    // 0x7c5954: ret                                    ~/kundoluk/blutter_output $ FILE="asm/bilim/screens/student/home/student_home_screen.dart"                                                                              echo "===== LESSON ITEM CREATION ====="                 sed -n '2200,2380p' "$FILE"                             ===== LESSON ITEM CREATION =====                            // 0x7c5a1c: ldur            x1, [fp, #-0x20]           // 0x7c5a20: r0 = add()                                 //     0x7c5a20: bl              #0x48eea0  ; [package:bloc/src/bloc.dart] Bloc::add                            // 0x7c5a24: r0 = Null                                  //     0x7c5a24: mov             x0, NULL               // 0x7c5a28: r0 = ReturnAsyncNotFuture()                //     0x7c5a28: b               #0xb3e7d8  ; ReturnAsyncNotFutureStub                                          // 0x7c5a2c: r0 = StackOverflowSharedWithoutFPURegs()                                                           //     0x7c5a2c: bl              #0xb4f8bc  ; StackOverflowSharedWithoutFPURegsStub                             // 0x7c5a30: b               #0x7c599c                }                                                       [closure] StudentLessonItem <anonymous closure>(dynamic, BuildContext, int) {                                     // ** addr: 0x7c5a34, size: 0x1e0
+    // 0x7c5a34: EnterFrame                                 //     0x7c5a34: stp             fp, lr, [SP, #-0x10]!                                                          //     0x7c5a38: mov             fp, SP
+    // 0x7c5a3c: AllocStack(0x50)                           //     0x7c5a3c: sub             SP, SP, #0x50          // 0x7c5a40: SetupParameters([dynamic _ /* r0 */])      //     0x7c5a40: ldr             x0, [fp, #0x20]        // 0x7c5a44: LoadField: r1 = r0->field_1f               //     0x7c5a44: ldur            w1, [x0, #0x1f]
+    // 0x7c5a48: DecompressPointer r1                       //     0x7c5a48: add             x1, x1, HEAP, lsl #32                                                          // 0x7c5a4c: stur            x1, [fp, #-8]              // 0x7c5a50: CheckStackOverflow                         //     0x7c5a50: ldr             x16, [THR, #0x48]  ; THR::stack_limit                                          //     0x7c5a54: cmp             SP, x16                //     0x7c5a58: b.ls            #0x7c5c08              // 0x7c5a5c: r1 = 2                                     //     0x7c5a5c: mov             x1, #2                 // 0x7c5a60: r0 = AllocateContext()
+    //     0x7c5a60: bl              #0xb52980  ; AllocateContextStub                                               // 0x7c5a64: mov             x2, x0                     // 0x7c5a68: ldur            x1, [fp, #-8]              // 0x7c5a6c: stur            x2, [fp, #-0x20]
+    // 0x7c5a70: StoreField: r2->field_b = r1               //     0x7c5a70: stur            w1, [x2, #0xb]         // 0x7c5a74: ldr             x0, [fp, #0x18]            // 0x7c5a78: StoreField: r2->field_f = r0               //     0x7c5a78: stur            w0, [x2, #0xf]         // 0x7c5a7c: LoadField: r3 = r1->field_b                //     0x7c5a7c: ldur            w3, [x1, #0xb]         // 0x7c5a80: DecompressPointer r3                       //     0x7c5a80: add             x3, x3, HEAP, lsl #32                                                          // 0x7c5a84: stur            x3, [fp, #-0x18]           // 0x7c5a88: LoadField: r4 = r3->field_b                //     0x7c5a88: ldur            w4, [x3, #0xb]         // 0x7c5a8c: DecompressPointer r4
+    //     0x7c5a8c: add             x4, x4, HEAP, lsl #32
+    // 0x7c5a90: stur            x4, [fp, #-0x10]           // 0x7c5a94: LoadField: r0 = r4->field_f                //     0x7c5a94: ldur            w0, [x4, #0xf]         // 0x7c5a98: DecompressPointer r0                       //     0x7c5a98: add             x0, x0, HEAP, lsl #32                                                          // 0x7c5a9c: LoadField: r5 = r0->field_7                //     0x7c5a9c: ldur            w5, [x0, #7]
+    // 0x7c5aa0: DecompressPointer r5                       //     0x7c5aa0: add             x5, x5, HEAP, lsl #32                                                          // 0x7c5aa4: r0 = LoadClassIdInstr(r5)                  //     0x7c5aa4: ldur            x0, [x5, #-1]          //     0x7c5aa8: ubfx            x0, x0, #0xc, #0x14
+    // 0x7c5aac: ldr             x16, [fp, #0x10]           // 0x7c5ab0: stp             x16, x5, [SP]              // 0x7c5ab4: r0 = GDT[cid_x0 + -0xfd1]()                //     0x7c5ab4: sub             lr, x0, #0xfd1         //     0x7c5ab8: ldr             lr, [x21, lr, lsl #3]                                                          //     0x7c5abc: blr             lr                     // 0x7c5ac0: mov             x1, x0                     // 0x7c5ac4: ldur            x3, [fp, #-0x20]           // 0x7c5ac8: stur            x1, [fp, #-0x40]
+    // 0x7c5acc: StoreField: r3->field_13 = r0              //     0x7c5acc: stur            w0, [x3, #0x13]
+    //     0x7c5ad0: ldurb           w16, [x3, #-1]         //     0x7c5ad4: ldurb           w17, [x0, #-1]         //     0x7c5ad8: and             x16, x17, x16, lsr #2                                                          //     0x7c5adc: tst             x16, HEAP, lsr #32
+    //     0x7c5ae0: b.eq            #0x7c5ae8              //     0x7c5ae4: bl              #0xb541f8  ; WriteBarrierWrappersStub                                          // 0x7c5ae8: ldur            x0, [fp, #-0x18]           // 0x7c5aec: LoadField: r2 = r0->field_f                //     0x7c5aec: ldur            w2, [x0, #0xf]         // 0x7c5af0: DecompressPointer r2                       //     0x7c5af0: add             x2, x2, HEAP, lsl #32                                                          // 0x7c5af4: stur            x2, [fp, #-0x38]
+    // 0x7c5af8: LoadField: r0 = r1->field_9b               //     0x7c5af8: ldur            w0, [x1, #0x9b]        // 0x7c5afc: DecompressPointer r0                       //     0x7c5afc: add             x0, x0, HEAP, lsl #32                                                          // 0x7c5b00: stur            x0, [fp, #-0x30]           // 0x7c5b04: LoadField: r4 = r1->field_27               //     0x7c5b04: ldur            w4, [x1, #0x27]
+    // 0x7c5b08: DecompressPointer r4                       //     0x7c5b08: add             x4, x4, HEAP, lsl #32                                                          // 0x7c5b0c: ldur            x5, [fp, #-8]              // 0x7c5b10: stur            x4, [fp, #-0x18]           // 0x7c5b14: LoadField: r6 = r5->field_13               //     0x7c5b14: ldur            w6, [x5, #0x13]        // 0x7c5b18: DecompressPointer r6                       //     0x7c5b18: add             x6, x6, HEAP, lsl #32                                                          // 0x7c5b1c: ArrayLoad: r5 = r6[0]  ; List_4            //     0x7c5b1c: ldur            w5, [x6, #0x17]        // 0x7c5b20: DecompressPointer r5                       //     0x7c5b20: add             x5, x5, HEAP, lsl #32                                                          // 0x7c5b24: ldur            x6, [fp, #-0x10]           // 0x7c5b28: stur            x5, [fp, #-8]              // 0x7c5b2c: LoadField: r7 = r6->field_b                //     0x7c5b2c: ldur            w7, [x6, #0xb]         // 0x7c5b30: DecompressPointer r7                       //     0x7c5b30: add             x7, x7, HEAP, lsl #32                                                          // 0x7c5b34: LoadField: r6 = r7->field_b                //     0x7c5b34: ldur            w6, [x7, #0xb]         // 0x7c5b38: DecompressPointer r6                       //     0x7c5b38: add             x6, x6, HEAP, lsl #32                                                          // 0x7c5b3c: LoadField: r7 = r6->field_f                //     0x7c5b3c: ldur            w7, [x6, #0xf]         // 0x7c5b40: DecompressPointer r7                       //     0x7c5b40: add             x7, x7, HEAP, lsl #32                                                          // 0x7c5b44: LoadField: r6 = r7->field_b                //     0x7c5b44: ldur            w6, [x7, #0xb]         // 0x7c5b48: DecompressPointer r6                       //     0x7c5b48: add             x6, x6, HEAP, lsl #32                                                          // 0x7c5b4c: cmp             w6, NULL                   // 0x7c5b50: b.eq            #0x7c5c10                  // 0x7c5b54: LoadField: r7 = r6->field_b                //     0x7c5b54: ldur            w7, [x6, #0xb]         // 0x7c5b58: DecompressPointer r7                       //     0x7c5b58: add             x7, x7, HEAP, lsl #32                                                          // 0x7c5b5c: LoadField: r6 = r7->field_13               //     0x7c5b5c: ldur            w6, [x7, #0x13]        // 0x7c5b60: DecompressPointer r6                       //     0x7c5b60: add             x6, x6, HEAP, lsl #32                                                          // 0x7c5b64: cmp             w6, NULL                   // 0x7c5b68: b.ne            #0x7c5b74                  // 0x7c5b6c: r6 = 0                                     //     0x7c5b6c: mov             x6, #0                 // 0x7c5b70: b               #0x7c5b84                  // 0x7c5b74: r7 = LoadInt32Instr(r6)                    //     0x7c5b74: sbfx            x7, x6, #1, #0x1f      //     0x7c5b78: tbz             w6, #0, #0x7c5b80
+    //     0x7c5b7c: ldur            x7, [x6, #7]           // 0x7c5b80: mov             x6, x7                     // 0x7c5b84: stur            x6, [fp, #-0x28]           // 0x7c5b88: r0 = StudentLessonItem()                   //     0x7c5b88: bl              #0x7c5c14  ; AllocateStudentLessonItemStub -> StudentLessonItem (size=0x3c)    // 0x7c5b8c: mov             x2, x0                     // 0x7c5b90: ldur            x0, [fp, #-0x40]           // 0x7c5b94: stur            x2, [fp, #-0x10]           // 0x7c5b98: StoreField: r2->field_b = r0               //     0x7c5b98: stur            w0, [x2, #0xb]         // 0x7c5b9c: ldur            x0, [fp, #-0x38]           // 0x7c5ba0: StoreField: r2->field_f = r0               //     0x7c5ba0: stur            w0, [x2, #0xf]         // 0x7c5ba4: ldur            x0, [fp, #-8]              // 0x7c5ba8: StoreField: r2->field_13 = r0              //     0x7c5ba8: stur            w0, [x2, #0x13]        // 0x7c5bac: ldur            x0, [fp, #-0x28]           // 0x7c5bb0: ArrayStore: r2[0] = r0  ; List_8           //     0x7c5bb0: stur            x0, [x2, #0x17]        // 0x7c5bb4: ldur            x3, [fp, #-0x20]           // 0x7c5bb8: r1 = Function '<anonymous closure>':.      //     0x7c5bb8: add             x1, PP, #0x17, lsl #12  ; [pp+0x17ec0] AnonymousClosure: (0x7c5c20), in [package:bilim/screens/student/home/student_home_screen.dart] _StudentHomeScreenState::build (0x7da81c)                //     0x7c5bbc: ldr             x1, [x1, #0xec0]
+    // 0x7c5bc0: r2 = 64                                    //     0x7c5bc0: mov             x2, #0x40              // 0x7c5bc4: r0 = AllocateClosure1()                    //     0x7c5bc4: bl              #0xb52d60  ; AllocateClosure1Stub                                              // 0x7c5bc8: mov             x1, x0
+    // 0x7c5bcc: ldur            x0, [fp, #-0x10]           // 0x7c5bd0: StoreField: r0->field_1f = r1              //     0x7c5bd0: stur            w1, [x0, #0x1f]        // 0x7c5bd4: r1 = false                                 //     0x7c5bd4: add             x1, NULL, #0x30  ; false                                                       // 0x7c5bd8: StoreField: r0->field_23 = r1              //     0x7c5bd8: stur            w1, [x0, #0x23]        // 0x7c5bdc: r1 = true                                  //     0x7c5bdc: add             x1, NULL, #0x20  ; true                                                        // 0x7c5be0: StoreField: r0->field_27 = r1              //     0x7c5be0: stur            w1, [x0, #0x27]        // 0x7c5be4: ldur            x2, [fp, #-0x18]           // 0x7c5be8: StoreField: r0->field_2b = r2          ~/kundoluk/blutter_output $
